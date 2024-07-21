@@ -13,3 +13,7 @@ print(Power(5,4))
 print(BinarySearch([2,4,6,8,10,12,14,16,18,20], 12, 0, 9))
 
 print(GreatestCommonDivisor(48,18))
+
+print(ListMax([45,55,10,12,30]))
+
+print(ListCount([2,4,6,8,10,12,14,16,18,20]))
