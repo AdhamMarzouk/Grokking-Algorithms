@@ -39,7 +39,7 @@ class Graph:
             node = queue.pop(0)  # Dequeue the first node
             if node not in searched:
                 if node == end:
-                    # If the end node is found, reconstruct the path
+                    # If the end node is found, create the path from start to end using the parents dictionary
                     shortest_path = []
                     while node is not None:
                         shortest_path.append(node)
