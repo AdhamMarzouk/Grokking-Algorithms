@@ -4,12 +4,17 @@ class WeightedGraph:
 
     def insert(self, new_item:dict) -> None:
 
-        if self.graph[key]:
-            print('This item already exists!')
-            return None
+        for key, value in new_item.items():
+            if key in self.graph:
+                self.graph[key].update(value)
 
-        for key, value in new_item:
-            self.graph[key] = value
+            else:
+                self.graph[key] = value
 
-    def _print(self):
-        print(self.graph)
+    def _print(self) -> None:
+        for key, value in self.graph.items():
+            print(f"{key}: {value}")
+
+    def dijkstra():
+        visited = set()
+        
